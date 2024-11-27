@@ -83,6 +83,6 @@ class Fargon2Plugin: FlutterPlugin, MethodCallHandler {
             hashLengthInBytes = hashLength
     )
 
-    return Base64.encodeToString(hashResult.rawHashAsByteArray(), Base64.DEFAULT)
+    return hashResult.encodedOutputAsString()
   }
 }
