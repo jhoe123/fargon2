@@ -1,9 +1,13 @@
-apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
 android {
     namespace = "dev.iktakahiro.fargon2"
-    compileSdkVersion 30
+    compileSdkVersion 34
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
